@@ -1,0 +1,145 @@
+body {
+	background: url("../img/crowd.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	/*background: cover;*/
+}
+
+.row {
+	/*border: 1px solid #d1d3d8;*/
+	margin: 20%;
+	margin-top: 8%;
+	text-align: center;
+	/*box-shadow: 1px 1px 3px 3px #bed2ec;*/
+	padding: 2% 2% 5% 2%;
+	background-color: black;
+	opacity: .7;
+}
+
+
+/*--------------------------
+|
+|		LOGINBOX
+|----------------------------
+*/
+/*box with log in inputs*/
+.login {
+	margin-top: 2%;
+	margin-bottom: 10%;
+	/*border: 1px solid red;*/
+	padding: 1%;
+
+}
+
+/*username input for login*/
+#username {
+	width: 32%;
+	display: inline-block;
+	font-family: 'Raleway', sans-serif;
+}
+
+/*password input for login*/
+#password {
+	width: 32%;
+	display: inline-block;
+	font-family: 'Raleway', sans-serif;
+}
+
+.button1 {
+	width: 32%;
+	display: inline-block;
+	background-color: #6885cd;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+}
+
+.button1:hover {
+	background-color: #2a72be;
+	color: white;
+}
+
+/*--------------------------
+|
+|		REGISTERBOX
+|----------------------------
+*/
+/*box with register inputs*/
+.register {
+	text-align: center;
+	/*border: 1px solid red;*/
+}
+
+/*username for register*/
+#regname {
+	display: block;
+	text-align: center;
+	width: 65%;
+	margin: auto;
+	margin-bottom: 3%;
+	margin-top: 3%;
+	font-family: 'Raleway', sans-serif;
+	color: red;	
+	background-color: #fff;
+	border: none;
+}
+
+#regname:onclick {
+	background-color: red;
+	color: white;
+}
+
+/*password for register*/
+#regpw {
+	display: block;
+	text-align: center;
+	width: 65%;
+	margin: auto;
+	margin-bottom: 4%;
+	font-family: 'Raleway', sans-serif;
+	color: red;	
+
+
+}
+
+.button2 {
+	background-color: #cf575f;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+.button2:hover {
+	background-color: #f5575f;
+	color: white;
+}
+
+/*same as id */
+.form-control {
+	border-radius: 0px;
+}
+
+.btn {
+	border-radius: 0px;
+}
+
+h4 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 50px;
+}
+
+h6 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	color: grey;
+	margin-top: 5%;
+}
+
+h1 {
+	font-size: 70px;
+	color: green;
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+

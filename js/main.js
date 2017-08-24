@@ -29,7 +29,50 @@ function login() {
 };
 
 // This function adds a set of data to the array
-function register() {
+// function register() {
+// 	var regusername = document.getElementById('regname').value
+// 	var regpassword = document.getElementById('regpw').value
+// 	// box for new username and password to be added
+// 	var newuser = {
+// 		username: regusername,
+// 		password: regpassword
+// 	}
+// 	// itterates through the array
+// 	for (var i = 0; i < userdata.length; i++) {
+// 		// checks to see if username is already taken
+// 		if (regusername == userdata[i].username) {
+// 			alert('That username is already taken');
+// 			return
+// 			// check to see if password is long enough
+// 		} else if (regpassword.length < 8) {
+// 			alert('Your password is too short, make it 8 or more characters');
+// 			return
+// 		} 
+
+// 	}
+// 	console.log(userdata);
+// 	alert('You Are Registered! Please log in');
+// 	// is suppose to add the new username and pw to the array
+// 	userdata.push(newuser);
+// };
+
+// // Changes the color of the register username box to green when clicked on
+// var x = document.getElementById('regname');
+// x.addEventListener('click', function() {
+// 	x.style.backgroundColor = "green";
+// });
+
+// // Changes the color of the  register password box to green when clicked on
+// var y = document.getElementById('regpw');
+// y.addEventListener('click', function() {
+// 	y.style.backgroundColor = "green";
+// });
+
+
+// This function adds a set of data to the array
+// Creates a new page for a form
+var registerbtn = document.getElementById('registerbtn');
+registerbtn.addEventListener('click', function() {
 	var regusername = document.getElementById('regname').value
 	var regpassword = document.getElementById('regpw').value
 	// box for new username and password to be added
@@ -54,19 +97,44 @@ function register() {
 	alert('You Are Registered! Please log in');
 	// is suppose to add the new username and pw to the array
 	userdata.push(newuser);
-};
 
-// // Changes the color of the register username box to green when clicked on
-// var x = document.getElementById('regname');
-// x.addEventListener('click', function() {
-// 	x.style.backgroundColor = "green";
-// });
+	// Hides the opening page box
+	document.getElementById("opening").style.display = "none";
 
-// // Changes the color of the  register password box to green when clicked on
-// var y = document.getElementById('regpw');
-// y.addEventListener('click', function() {
-// 	y.style.backgroundColor = "green";
-// });
+	// shows the form div
+	document.getElementById("form").style.display = "block";
+
+
+})
+
+
+	// Makes the opening box apear again
+	submit = document.getElementById('submit');
+	submit.addEventListener('click', function() {
+		document.getElementById('form').style.display = "none";
+		document.getElementById('opening').style.display = "block";
+		alert("Thank You for Registering");
+
+	})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

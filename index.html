@@ -23,7 +23,7 @@
 
   </head>
   <body>
-<div class="row">
+<div class="row" id="opening">
   <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 inner">
     <h1>Demfy</h1>
     <div class="login">
@@ -37,8 +37,56 @@
       <input type="username" name="username" placeholder="Username" id="regname" class="form-control">
       <input type="password" name="passeord" placeholder="Password" id="regpw" class="form-control" >
       <h6>Password must be 8 characters or longer</h6>
-      <button class="button2 btn" onclick="register()">Register</button>
+      <button class="button2 btn" id="registerbtn" onclick="register()">Register</button>
 
+    </div>
+  </div>
+</div>
+
+<div class="row" id="form">
+  <div class=" col-md-12 col-sm-12">
+    <h4 class="formhead">Welcome to Demfy, the worlds first AI Dj. Please fill out the require fields.</h4> 
+    <div class="holder">
+      <input type="name" name="first" id="firstname" placeholder="Fisrt" class="form-control names">
+      <input type="name" name="last" id="lastname" placeholder="Last" class="form-control names">
+    </div>
+    <div class="holder">
+      <input type="email" name="email" id="email" placeholder="Email" class="form-control email">
+    </div>
+    <div class="holder">
+      <form>
+        <div class="sex">
+          <input type="radio" name="gender" value="male">Male
+        </div>
+        <div class="sex">
+          <input type="radio" name="gender" value="female">Female
+        </div>
+      </form>
+    <div class="holder">
+      <form>
+        <div class="race">
+          <input type="checkbox" name="race" value="human" class="race">Human
+        </div>
+        <div class="race">
+          <input type="checkbox" name="race" value="earthbeing" class="race">Earth Being
+        </div>
+        <div class="race">
+          <input type="checkbox" name="race" value="alien" class="race">Alien
+        </div>
+        <div class="race">
+          <input type="checkbox" name="race" value="lizard" class="race">Lizard King
+        </div>
+        <div class="race">
+          <input type="checkbox" name="race" value="homosapien" class="race">Homo Sapien
+        </div>
+        <div class="race">
+          <input type="checkbox" name="race" value="fish" class="race">Fish
+        </div>
+      </form>
+      <div class="holder">
+        <button class="btn btn-lg submit" id="submit">Submit</button>
+      </div>
+    </div>
     </div>
   </div>
 </div>

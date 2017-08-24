@@ -143,3 +143,86 @@ h1 {
 
 
 
+/*Form*/
+
+/*for box*/
+#form {
+	display: none;
+}
+
+/*box with first and last name and email in it*/
+.holder {
+	/*border: 1px solid red;*/
+	width: 100%;
+	margin-top: 2%;
+}
+
+/*first and last name inputs*/
+.names {
+	display: inline;
+	width: 40%;
+	margin-right: 2%;
+	border-radius: 30px;
+}
+
+.email {
+	width: 83%;
+	border-radius: 30px;
+	margin-left: 8%;
+	margin-top: 3%;
+}
+
+form {
+	color: white;
+	font-size: 15px;
+	margin-top: 5%;
+}
+
+.sex {
+	margin-right: 4%;
+	display: inline;
+}
+
+.race {
+	margin-right: 1%;
+	display: inline;
+}
+
+.formhead {
+	color: green;
+	font-size: 17px;
+	margin-bottom: 6%;
+}
+
+.submit {
+	background-color: rgba(0, 128, 0, 1);
+	margin-top: 3%;
+	color: white;
+}
+
+.submit:hover {
+	background: rgba(2, 174, 5, 1);
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

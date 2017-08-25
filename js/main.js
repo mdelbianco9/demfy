@@ -106,16 +106,61 @@ registerbtn.addEventListener('click', function() {
 
 
 })
+	var racearray = ["human", "earthbeing", "alien", "lizardking", "homo", "fish"];
 
+	// array to store user profiles
+	var userarray = [];
 
-	// Makes the opening box apear again
+	// Function for the submit button to store information and make opening box appear
 	submit = document.getElementById('submit');
 	submit.addEventListener('click', function() {
+		var first = document.getElementById('firstname').value;
+		var last = document.getElementById('lastname').value;
+		var email = document.getElementById('email').value;
+		var re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+		var male = document.getElementById('male');
+		var female = document.getElementById('female');
+
+		// object to store user profile data
+		var userobject = {first:"", last:"", email:"", sex:"", race:""};
+
+		// Lets push some stuff to the array
+		userobject.first = first;
+		userobject.last = last;
+
+		// validates the email and pushes it to the array
+		if (email.match(re)) {
+			userobject.email = email;
+		} else {
+			alert("Email Address not valid")
+		}
+		// checks which se is checked then pushes it to the array
+		if (male.checked == true) {
+			userobject.sex = "male";
+		} else if (female.checked == true) {
+			userobject.sex = "female";
+		}
+
+		for (i = 0; i < racearray.length; i++) {
+			var x = document.getElementById(racearray[i]);
+			if (x.checked == true) {
+				userobject.race = x.value;
+			} 
+		}
+
+
+		// Push the newly created object
+		userarray.push(userobject);
+
+		// Makes the opening box apear and takes form box away
 		document.getElementById('form').style.display = "none";
 		document.getElementById('opening').style.display = "block";
 		alert("Thank You for Registering");
 
 	})
+
+
+
 
 
 

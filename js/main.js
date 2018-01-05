@@ -140,7 +140,7 @@ registerbtn.addEventListener('click', function() {
 		} else if (female.checked == true) {
 			userobject.sex = "female";
 		}
-
+		// :oops throught the check boxes to find the one thats checked then adds it to the object
 		for (i = 0; i < racearray.length; i++) {
 			var x = document.getElementById(racearray[i]);
 			if (x.checked == true) {

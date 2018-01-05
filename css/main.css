@@ -1,5 +1,5 @@
 body {
-	background: url("../img/crowd.jpg");
+	/*background: url("../img/crowd.jpg");*/
 	background-repeat: no-repeat;
 	background-size: 100%;
 	/*background: cover;*/
@@ -12,8 +12,11 @@ body {
 	text-align: center;
 	/*box-shadow: 1px 1px 3px 3px #bed2ec;*/
 	padding: 2% 2% 5% 2%;
-	background-color: black;
-	opacity: .7;
+	/*background-color: black;*/
+	background-image: url("../img/music.jpg");
+	/*background-size: cover;*/
+	background-position: 18% 15%;
+	opacity: .5;
 }
 
 
@@ -48,7 +51,7 @@ body {
 .button1 {
 	width: 32%;
 	display: inline-block;
-	background-color: #6885cd;
+	background-color: #456ba5;
 	color: white;
 	font-family: 'Raleway', sans-serif;
 }
@@ -124,19 +127,20 @@ body {
 
 h4 {
 	font-family: 'Raleway', sans-serif;
-	font-size: 50px;
+	font-size: 40px;
+	color: #fff;
 }
 
 h6 {
 	font-family: 'Raleway', sans-serif;
-	font-size: 20px;
-	color: grey;
+	font-size: 15px;
+	color: #fff;
 	margin-top: 5%;
 }
 
 h1 {
 	font-size: 70px;
-	color: green;
+	color: #fff;
 	display: inline-block;
 	font-family: 'Montserrat', sans-serif;
 }
